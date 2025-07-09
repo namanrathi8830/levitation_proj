@@ -1,119 +1,178 @@
-# Levitation Invoice Generator Backend API
+# Levitation InfoTech - Invoice Generator
 
-This is the backend for the Levitation Invoice Generator application. It is built with Express.js, MongoDB Atlas, JWT authentication, and provides RESTful APIs for user authentication, product management, and invoice generation.
+A full-stack web application for secure invoice generation, product management, and user authentication. Built with Next.js (React, TypeScript), Express.js, and MongoDB.
 
-## Quick Start
+## Technology Stack
 
-1. **Install Dependencies:**
+### Frontend
+- Next.js 14 (App Router)
+- TypeScript
+- CSS Modules, Tailwind CSS, Shadcn UI
+- Redux for state management
+- Tanstack Query for data fetching
+- Form validation
 
-   ```bash
-   cd backend
-   npm install
-   ```
-
-2. **Environment Setup:**
-   Copy `.env.example` to `.env` and update the values:
-
-   ```bash
-   cp .env.example .env
-   ```
-
-3. **Start Development Server:**
-
-   ```bash
-   npm run dev
-   ```
-
-4. **Start Production Server:**
-
-   ```bash
-   npm start
-   ```
+### Backend
+- Express.js (Node.js)
+- MongoDB Atlas
+- JWT authentication (email/password)
+- EncoreJS
+- Puppeteer for PDF generation
+- RESTful APIs
+- Security: Helmet, CORS
 
 ## Project Structure
 
 ```
-backend/
-├── controllers/      # Route controllers
-├── middleware/       # Custom middleware
-├── models/           # MongoDB models
-├── routes/           # API routes
-├── utils/            # Utility functions
-├── server.js         # Main server file
-├── package.json      # Dependencies
-└── .env              # Environment variables
+levitation/
+├── frontend/                # Next.js frontend
+│   ├── app/                 # Pages (login, signup, products)
+│   ├── components/          # UI components
+│   ├── public/              # Static assets
+│   └── ...
+├── backend/                 # Express.js backend
+│   ├── controllers/         # Route controllers
+│   ├── models/              # MongoDB models
+│   ├── routes/              # API routes
+│   ├── middleware/          # Custom middleware
+│   └── server.js            # Main server file
+└── README.md                # Project documentation
 ```
+
+## Features
+
+### Authentication & Security
+- JWT-based authentication
+- Password hashing (bcrypt)
+- Protected routes (frontend & backend)
+- Input validation (client & server)
+- CORS and security headers
+
+### Product Management
+- Add, view, and remove products
+- Real-time calculation of totals and GST
+- User-specific product isolation
+- Form validation and error handling
+
+### Invoice Generation
+- Professional PDF invoice design (Puppeteer)
+- Dynamic content from user products
+- GST (18%) calculation and breakdown
+- Invoices stored in MongoDB
+
+## Getting Started
+
+### Prerequisites
+- Node.js 18+
+- MongoDB Atlas or local MongoDB
+- npm
+
+### 1. Clone & Install
+
+```bash
+git clone <repository-url>
+cd levitation
+
+# Install frontend dependencies
+cd frontend
+npm install
+
+# Install backend dependencies
+cd ../backend
+npm install
+```
+
+### 2. Environment Setup
+
+**Frontend (.env.local):**
+```
+NEXT_PUBLIC_API_URL=http://localhost:5001/api
+```
+
+**Backend (backend/.env):**
+```
+PORT=5001
+NODE_ENV=development
+MONGODB_URI=your-mongodb-connection-string
+JWT_SECRET=your-super-secret-jwt-key
+JWT_EXPIRE=7d
+FRONTEND_URL=http://localhost:3000
+```
+
+### 3. Start Development Servers
+
+**Terminal 1 - Backend:**
+```bash
+cd backend
+npm run dev
+```
+
+**Terminal 2 - Frontend:**
+```bash
+cd frontend
+npm run dev
+```
+
+### 4. Access Application
+- Frontend: http://localhost:3000
+- Backend API: http://localhost:5001/api
+- Health Check: http://localhost:5001/api/health
 
 ## API Endpoints
 
 ### Authentication
-
-- `POST /api/auth/register` - Register a new user
-- `POST /api/auth/login` - Login user
-- `GET /api/auth/me` - Get current user
+- POST /api/auth/register  (Register new user)
+- POST /api/auth/login     (Login user)
+- GET  /api/auth/me        (Get current user)
 
 ### Products
-
-- `GET /api/products` - Get all products for the authenticated user
-- `POST /api/products` - Create a new product
-- `GET /api/products/:id` - Get a single product
-- `PUT /api/products/:id` - Update a product
-- `DELETE /api/products/:id` - Delete a product
-- `DELETE /api/products/clear` - Delete all products for the authenticated user
+- GET    /api/products     (Get all products)
+- POST   /api/products     (Create product)
+- GET    /api/products/:id (Get single product)
+- PUT    /api/products/:id (Update product)
+- DELETE /api/products/:id (Delete product)
+- DELETE /api/products/clear (Delete all products for user)
 
 ### Invoices
+- GET  /api/invoices           (Get all invoices)
+- POST /api/invoices           (Create invoice)
+- POST /api/invoices/generate  (Generate from products)
+- GET  /api/invoices/:id       (Get single invoice)
+- PUT  /api/invoices/:id       (Update invoice)
+- DELETE /api/invoices/:id     (Delete invoice)
 
-- `GET /api/invoices` - Get all invoices
-- `POST /api/invoices` - Create a new invoice
-- `POST /api/invoices/generate` - Generate invoice from products
-- `POST /api/invoices/generate-pdf` - Generate and download PDF invoice
-- `GET /api/invoices/:id` - Get a single invoice
-- `PUT /api/invoices/:id` - Update an invoice
-- `DELETE /api/invoices/:id` - Delete an invoice
+## Authentication Flow
+1. Register with name, email, and password
+2. Login to receive JWT token
+3. Use token for all protected API calls
+4. Auto-logout on invalid/expired tokens
 
-### Health Check
+## Database Schema (Simplified)
 
-- `GET /api/health` - Server health status
-
-## Authentication
-
-All protected routes require a JWT token in the Authorization header:
-
+### User
 ```
-Authorization: Bearer <your-jwt-token>
-```
-
-## Database Schema
-
-### User Model
-
-```javascript
 {
   name: String,
   email: String (unique),
   password: String (hashed),
-  timestamps: true
 }
 ```
 
-### Product Model
-
-```javascript
+### Product
+```
 {
   name: String,
   price: Number,
   quantity: Number,
-  totalPrice: Number (calculated),
+  totalPrice: Number,
   user: ObjectId (ref: User),
-  timestamps: true
 }
 ```
 
-### Invoice Model
-
-```javascript
+### Invoice
+```
 {
-  invoiceNumber: String (auto-generated),
+  invoiceNumber: String,
   user: ObjectId (ref: User),
   customerName: String,
   customerEmail: String,
@@ -123,85 +182,14 @@ Authorization: Bearer <your-jwt-token>
   gstAmount: Number,
   totalAmount: Number,
   status: String,
-  timestamps: true
 }
 ```
 
-## Features
+## Security & Best Practices
+- Passwords are hashed and never stored in plain text
+- All sensitive routes are protected by JWT
+- Input validation and sanitization on all endpoints
+- CORS and security headers enabled
 
-- Secure JWT authentication
-- Password hashing with bcrypt
-- Input validation using express-validator
-- Centralized error handling middleware
-- CORS enabled for cross-origin requests
-- Security headers with Helmet.js
-- Request logging with Morgan
-- Automatic price and GST calculations
-
-## Environment Variables
-
-Example `.env` configuration:
-
-```env
-PORT=5000
-NODE_ENV=development
-MONGODB_URI=mongodb+srv://...
-JWT_SECRET=your-secret-key
-JWT_EXPIRE=7d
-FRONTEND_URL=http://localhost:3000
-```
-
-## API Response Format
-
-### Success Response
-
-```json
-{
-  "success": true,
-  "message": "Operation successful",
-  "data": {...},
-  "count": 10
-}
-```
-
-### Error Response
-
-```json
-{
-  "success": false,
-  "message": "Error description",
-  "errors": [...]
-}
-```
-
-## Security Features
-
-- Password hashing with bcrypt
-- JWT token authentication
-- Input validation and sanitization
-- CORS protection
-- Security headers with Helmet
-- MongoDB injection protection
-- Rate limiting ready
-
-## Deployment
-
-This backend is ready for deployment on platforms such as:
-
-- Heroku
-- Vercel
-- AWS EC2
-- DigitalOcean
-- Any Node.js hosting platform
-
-## API Testing
-
-You can use tools like Postman, Insomnia, or cURL to test the API endpoints.
-
-Example login request:
-
-```bash
-curl -X POST http://localhost:5000/api/auth/login \
-  -H "Content-Type: application/json" \
-  -d '{"email": "user@example.com", "password": "password123"}'
-```
+## License
+This project is for assignment and demonstration purposes only.
