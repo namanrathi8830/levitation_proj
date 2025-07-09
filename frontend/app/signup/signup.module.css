@@ -1,0 +1,305 @@
+.signupContainer {
+  width: 100%;
+  height: 100vh;
+  background: #141414;
+  position: relative;
+  overflow: hidden;
+}
+
+.blurEffect1 {
+  width: 220px;
+  height: 257px;
+  flex-shrink: 0;
+  border-radius: 256.888px;
+  opacity: 0.43;
+  background: #ccf575;
+  filter: blur(150px);
+  position: absolute;
+  left: -65px;
+  top: 821px;
+  z-index: 1;
+}
+
+.blurEffect2 {
+  width: 220px;
+  height: 257px;
+  flex-shrink: 0;
+  border-radius: 256.888px;
+  opacity: 0.56;
+  background: #ccf575;
+  filter: blur(150px);
+  position: absolute;
+  right: 810px;
+  top: 136px;
+  z-index: 1;
+}
+
+.blurEffect3 {
+  width: 234px;
+  height: 227px;
+  transform: rotate(-90deg);
+  flex-shrink: 0;
+  background: #4f59a8;
+  filter: blur(150px);
+  position: absolute;
+  right: 151px;
+  top: 171px;
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 64px);
+  position: relative;
+  z-index: 2;
+}
+
+.formContainer {
+  display: flex;
+  width: 496px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  position: absolute;
+  left: 66px;
+  top: 208px;
+  height: 630px;
+}
+
+.header h1 {
+  color: #fff;
+  font-family:
+    Pretendard,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 113%;
+  letter-spacing: 0.4px;
+  margin-bottom: 12px;
+}
+
+.header p {
+  width: 500px;
+  height: 60px;
+  color: #a7a7a7;
+  font-family:
+    Mukta,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.165px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.inputGroup label {
+  color: #fff;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.inputGroup input {
+  display: flex;
+  height: 60px;
+  padding: 20px 10px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 4px;
+  border: 1px solid #424647;
+  background: #202020;
+  color: #fff;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+}
+
+.inputGroup input::placeholder {
+  color: #707070;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: #ccf575;
+}
+
+.helpText {
+  color: #b8b8b8;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.actionRow {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.registerButton {
+  display: flex;
+  padding: 14.935px 19.914px;
+  justify-content: center;
+  align-items: center;
+  gap: 9.957px;
+  border-radius: 7.468px;
+  background: linear-gradient(90deg, #141414 -6.53%, #303030 0.64%);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.registerButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(204, 245, 117, 0.2);
+}
+
+.registerButton span {
+  color: #ccf575;
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  font-family:
+    Pretendard,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.alreadyAccount {
+  color: #b8b8b8;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.alreadyAccount:hover {
+  color: #ccf575;
+}
+
+.imageContainer {
+  display: flex;
+  width: 830px;
+  height: 733px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  position: absolute;
+  right: 60px;
+  top: 191px;
+}
+
+.signupImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.errorMessage {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  color: #ff6b6b;
+  padding: 12px;
+  border-radius: 4px;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.successMessage {
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid rgba(0, 255, 0, 0.3);
+  color: #ccf575;
+  padding: 12px;
+  border-radius: 4px;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.registerButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.inputGroup input:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

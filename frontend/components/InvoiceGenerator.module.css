@@ -1,0 +1,478 @@
+.invoiceContainer {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  position: relative;
+  padding: 20px;
+}
+
+.backButton {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #141414;
+  color: #ccf575;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family:
+    Pretendard,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 10;
+  transition: all 0.2s ease;
+}
+
+.backButton:hover {
+  background: #303030;
+  transform: translateY(-1px);
+}
+
+.invoice {
+  width: 595px;
+  height: 737px;
+  background: #fff;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 23px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 49px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 4.556px;
+  width: 115px;
+  height: 37px;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: -1.082px;
+}
+
+.companyName {
+  color: #000;
+  font-family:
+    Pretendard,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 17.311px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+}
+
+.companySubtitle {
+  width: 71.947px;
+  color: #000;
+  font-family:
+    Pretendard,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 6.491px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+}
+
+.invoiceTitle {
+  display: flex;
+  width: 167px;
+  height: 40px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+  flex-shrink: 0;
+}
+
+.invoiceTitle h1 {
+  align-self: stretch;
+  color: #0a0a0a;
+  text-align: right;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24.114px;
+  margin: 0;
+}
+
+.invoiceTitle p {
+  align-self: stretch;
+  color: #333;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 9.995px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 11.423px;
+  opacity: 0.6;
+  margin: 0;
+}
+
+.divider {
+  width: 594px;
+  height: 0px;
+  flex-shrink: 0;
+  stroke-width: 1px;
+  stroke: #eaeaea;
+  border-top: 1px solid #eaeaea;
+  margin-bottom: 20px;
+}
+
+.customerSection {
+  width: 549px;
+  height: 86px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background:
+    radial-gradient(
+      116.09% 116.08% at 50.43% 51.58%,
+      #191919 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(55.35% 63.52% at 53.55% 87.4%, #0f0f0f 0%, #303661 100%),
+    #165fe3;
+  position: relative;
+  margin-bottom: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 29px;
+}
+
+.customerInfo {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 106px;
+  height: 43px;
+}
+
+.customerLabel {
+  color: rgba(204, 204, 204, 0.8);
+  text-align: right;
+  font-family:
+    Rubik,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.customerName {
+  color: #ccf575;
+  text-align: right;
+  font-family:
+    Rubik,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.customerDate {
+  color: #ddd;
+  text-align: right;
+  font-family:
+    Rubik,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  right: 29px;
+  top: 17px;
+  width: 88px;
+  height: 14px;
+}
+
+.customerEmail {
+  display: inline-flex;
+  padding: 5px 7px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 28px;
+  background: #fff;
+  position: absolute;
+  right: 29px;
+  bottom: 12px;
+  width: 128px;
+  height: 24px;
+  color: #000;
+  text-align: right;
+  font-family:
+    Rubik,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.productsTable {
+  display: flex;
+  width: 551px;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 41px;
+}
+
+.tableHeader {
+  display: flex;
+  padding: 9.995px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 7.14px;
+  align-self: stretch;
+  border-radius: 78px;
+  background: linear-gradient(91deg, #303661 10.65%, #263406 114.19%);
+}
+
+.tableHeaderCell {
+  display: flex;
+  align-items: flex-start;
+  gap: 7.14px;
+  flex: 1 0 0;
+  color: #fff;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 9.995px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 11.423px;
+}
+
+.tableRowEven {
+  display: flex;
+  padding: 9.995px;
+  align-items: center;
+  gap: 7.14px;
+  align-self: stretch;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.tableRowOdd {
+  display: flex;
+  padding: 9.995px;
+  align-items: center;
+  gap: 7.14px;
+  align-self: stretch;
+  border-radius: 20px;
+  background: #fafafa;
+}
+
+.tableCell {
+  flex: 1 0 0;
+  color: #333;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 9.995px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 11.423px;
+}
+
+.invoiceDate {
+  display: flex;
+  width: 544px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 41px;
+  height: 13px;
+}
+
+.invoiceDate span {
+  color: #515151;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 8.367px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.totalSection {
+  display: flex;
+  width: 253px;
+  height: 104px;
+  padding: 11.866px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11.866px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #a2a2a2;
+  background: #fff;
+  margin-left: auto;
+  margin-bottom: 46px;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.totalRow span:first-child {
+  width: 96.705px;
+  height: 17.205px;
+  color: rgba(10, 10, 10, 0.55);
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16.782px;
+}
+
+.totalRow span:last-child {
+  width: 106.198px;
+  height: 17.205px;
+  color: rgba(10, 10, 10, 0.55);
+  text-align: right;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16.782px;
+}
+
+.totalRowFinal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.totalRowFinal span:first-child {
+  width: 96.705px;
+  height: 17.205px;
+  color: #0a0a0a;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16.782px;
+}
+
+.totalRowFinal span:last-child {
+  height: 17.205px;
+  flex: 1 0 0;
+  color: #175ee2;
+  text-align: right;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16.782px;
+}
+
+.footer {
+  display: inline-flex;
+  padding: 10px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  background: #272833;
+  width: 463px;
+  height: 46px;
+  margin: 0 auto;
+}
+
+.footer p {
+  width: 403px;
+  color: #fff;
+  text-align: center;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 8.367px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  margin: 0;
+}

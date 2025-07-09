@@ -1,0 +1,427 @@
+.productsContainer {
+  width: 100%;
+  min-height: 100vh;
+  background: #141414;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.blurEffect1 {
+  width: 201px;
+  height: 194px;
+  transform: rotate(-90deg);
+  flex-shrink: 0;
+  background: #404993;
+  filter: blur(150px);
+  position: absolute;
+  left: 549px;
+  top: -9px;
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 0 79px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
+  min-height: calc(100vh - 164px);
+}
+
+.header h1 {
+  color: #fff;
+  font-family:
+    Pretendard,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 113%;
+  letter-spacing: 0.4px;
+  margin-bottom: 12px;
+}
+
+.header p {
+  width: 500px;
+  height: 60px;
+  color: #a7a7a7;
+  font-family:
+    Mukta,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.165px;
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  align-self: stretch;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.inputRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1 0 0;
+}
+
+.inputGroup label {
+  color: #fff;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.inputGroup input {
+  display: flex;
+  height: 60px;
+  padding: 20px 10px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 4px;
+  border: 1px solid #424647;
+  background: #202020;
+  color: #fff;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+}
+
+.inputGroup input::placeholder {
+  color: #b3b3b3;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: #ccf575;
+}
+
+.addButton {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 7.468px;
+  background: linear-gradient(90deg, #141414 -6.53%, #303030 0.64%);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: center;
+}
+
+.addButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(204, 245, 117, 0.2);
+}
+
+.addButton span {
+  color: #ccf575;
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  font-family:
+    Pretendard,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.tableSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.tableContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tableHeader {
+  display: flex;
+  padding: 14px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px 8px 0px 0px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.headerCell {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1 0 0;
+}
+
+.headerCell span {
+  color: #000;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.tableRow {
+  display: flex;
+  padding: 16px 14px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border: 1px solid #3f3f3f;
+  position: relative;
+}
+
+.cell {
+  flex: 1 0 0;
+  color: #fff;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.summaryRow {
+  display: flex;
+  padding: 16px 14px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border: 1px solid #3f3f3f;
+}
+
+.summaryCell {
+  width: 158px;
+  color: #fff;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.summaryValue {
+  width: 298.64px;
+  height: 16px;
+  color: #fff;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.invoiceButton {
+  display: flex;
+  width: 435px;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 7.468px;
+  background: linear-gradient(90deg, #141414 -6.53%, #303030 0.64%);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.invoiceButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(204, 245, 117, 0.2);
+}
+
+.invoiceButton span {
+  color: #ccf575;
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  font-family:
+    Pretendard,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.errorMessage {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  color: #ff6b6b;
+  padding: 12px;
+  border-radius: 4px;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.addButton:disabled,
+.invoiceButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.inputGroup input:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.loadingRow,
+.emptyRow {
+  display: flex;
+  padding: 40px 14px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  border: 1px solid #3f3f3f;
+}
+
+.loadingText,
+.emptyText {
+  color: #b8b8b8;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Remove (x) button styles */
+.removeProductBtn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  background: rgba(255,255,255,0.08);
+  border: none;
+  border-radius: 50%;
+  color: #ff6b6b;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.2s, background 0.2s;
+  z-index: 2;
+}
+
+.tableRow:hover .removeProductBtn {
+  opacity: 1;
+}
+
+.removeProductBtn:hover {
+  background: rgba(255,107,107,0.15);
+  color: #fff;
+}

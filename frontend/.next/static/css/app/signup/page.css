@@ -1,0 +1,525 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./components/Navigation.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.Navigation_navigation__pd51o {
+  display: flex;
+  width: 100%;
+  height: 64px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(44, 44, 44, 0.49);
+  background: #1f1f1f;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.12);
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+}
+
+.Navigation_navContainer__CvDUA {
+  display: flex;
+  width: 100%;
+  padding: 8px 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navigation_logo__ZzKRw {
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.Navigation_navButton__Sv55t {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  border: 1px solid #292c20;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.Navigation_navButton__Sv55t span {
+  color: #ccf575;
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  font-family:
+    Pretendard,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.Navigation_navButtonLogout__xLFm_ {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #292c20 -6.53%, #ccf575 0.64%);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.Navigation_navButtonLogout__xLFm_ span {
+  color: #121212;
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  font-family:
+    Pretendard,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.Navigation_navButtonDefault__c_KhQ {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  border: 1px solid #292c20;
+}
+
+.Navigation_navButtonDefault__c_KhQ span {
+  color: #ccf575;
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  font-family:
+    Pretendard,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.Navigation_serviceMenu__pPox8 {
+  display: flex;
+  padding: 60px 128px 0px 128px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 40px;
+  border-radius: 0px 0px 12px 12px;
+}
+
+.Navigation_serviceGrid__xgNUK {
+  display: flex;
+  align-items: flex-start;
+  gap: 160px;
+  width: 100%;
+  position: absolute;
+  left: 128px;
+  top: 60px;
+  width: 1184px;
+  height: 156px;
+}
+
+.Navigation_serviceColumn__Ub_LW {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.Navigation_serviceCategory__8rh7p {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.Navigation_serviceCategory__8rh7p span {
+  color: #707070;
+  font-family:
+    Pretendard,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.Navigation_serviceList__SffSa {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Navigation_serviceList__SffSa li {
+  color: #fff;
+  font-family:
+    Pretendard,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.Navigation_exploreServices__UgeO6 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: absolute;
+  left: 128px;
+  top: 256px;
+  width: 119px;
+  height: 22px;
+}
+
+.Navigation_exploreServices__UgeO6 span {
+  color: #ccf575;
+  font-family:
+    Pretendard,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/signup/signup.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+.signup_signupContainer__CUrl2 {
+  width: 100%;
+  height: 100vh;
+  background: #141414;
+  position: relative;
+  overflow: hidden;
+}
+
+.signup_blurEffect1__yZEAZ {
+  width: 220px;
+  height: 257px;
+  flex-shrink: 0;
+  border-radius: 256.888px;
+  opacity: 0.43;
+  background: #ccf575;
+  filter: blur(150px);
+  position: absolute;
+  left: -65px;
+  top: 821px;
+  z-index: 1;
+}
+
+.signup_blurEffect2__29hZ0 {
+  width: 220px;
+  height: 257px;
+  flex-shrink: 0;
+  border-radius: 256.888px;
+  opacity: 0.56;
+  background: #ccf575;
+  filter: blur(150px);
+  position: absolute;
+  right: 810px;
+  top: 136px;
+  z-index: 1;
+}
+
+.signup_blurEffect3__khyrg {
+  width: 234px;
+  height: 227px;
+  transform: rotate(-90deg);
+  flex-shrink: 0;
+  background: #4f59a8;
+  filter: blur(150px);
+  position: absolute;
+  right: 151px;
+  top: 171px;
+  z-index: 1;
+}
+
+.signup_content__w0O1t {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 64px);
+  position: relative;
+  z-index: 2;
+}
+
+.signup_formContainer__WgTkq {
+  display: flex;
+  width: 496px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  position: absolute;
+  left: 66px;
+  top: 208px;
+  height: 630px;
+}
+
+.signup_header__kxUmW h1 {
+  color: #fff;
+  font-family:
+    Pretendard,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 113%;
+  letter-spacing: 0.4px;
+  margin-bottom: 12px;
+}
+
+.signup_header__kxUmW p {
+  width: 500px;
+  height: 60px;
+  color: #a7a7a7;
+  font-family:
+    Mukta,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.165px;
+}
+
+.signup_form__Y53Ho {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.signup_inputGroup__sA_ms {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.signup_inputGroup__sA_ms label {
+  color: #fff;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.signup_inputGroup__sA_ms input {
+  display: flex;
+  height: 60px;
+  padding: 20px 10px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 4px;
+  border: 1px solid #424647;
+  background: #202020;
+  color: #fff;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+}
+
+.signup_inputGroup__sA_ms input::placeholder {
+  color: #707070;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.signup_inputGroup__sA_ms input:focus {
+  outline: none;
+  border-color: #ccf575;
+}
+
+.signup_helpText__NWfcC {
+  color: #b8b8b8;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.signup_actionRow__BnN7p {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.signup_registerButton__I089f {
+  display: flex;
+  padding: 14.935px 19.914px;
+  justify-content: center;
+  align-items: center;
+  gap: 9.957px;
+  border-radius: 7.468px;
+  background: linear-gradient(90deg, #141414 -6.53%, #303030 0.64%);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.signup_registerButton__I089f:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(204, 245, 117, 0.2);
+}
+
+.signup_registerButton__I089f span {
+  color: #ccf575;
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  font-family:
+    Pretendard,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.signup_alreadyAccount__ChegL {
+  color: #b8b8b8;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.signup_alreadyAccount__ChegL:hover {
+  color: #ccf575;
+}
+
+.signup_imageContainer___eHWh {
+  display: flex;
+  width: 830px;
+  height: 733px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  position: absolute;
+  right: 60px;
+  top: 191px;
+}
+
+.signup_signupImage__QI0_s {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.signup_errorMessage__rI54A {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  color: #ff6b6b;
+  padding: 12px;
+  border-radius: 4px;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.signup_successMessage__hFgyH {
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid rgba(0, 255, 0, 0.3);
+  color: #ccf575;
+  padding: 12px;
+  border-radius: 4px;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.signup_registerButton__I089f:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.signup_inputGroup__sA_ms input:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
